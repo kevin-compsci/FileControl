@@ -15,14 +15,15 @@ import java.util.*;
 //class
 class JavaFC {
 	//Global Declarations
+	static final String fileName = "test.txt";
 
 	//main driver
 	public static void main(String[] args) {
 		//create file
-		createMyFile();
+		File myFile = createMyFile();
 
 		//edit file
-		editMyFile();
+		editMyFile(myFile);
 
 		//open file
 		openMyFile();
@@ -37,9 +38,10 @@ class JavaFC {
 	//function definitions below	
 
 	//create a small text file
-	public static void createMyFile() {
+	public static File createMyFile() {
+		File myFile = null;
 		try {
-			File myFile = new File("test.txt");
+			myFile = new File(fileName);
 
 			//if this file doesn't exist then create it
 			if(!myFile.exists()) {
@@ -49,16 +51,21 @@ class JavaFC {
 		catch (IOException e) {
 			System.err.println("FILE CREATE ERROR");
 		}
+		return myFile;
 	}
 
 	//edit a file
-	public static void editMyFile() {
-		// try {
-		// 	System.out.println("WRITE");
-		// }
-		// catch (IOException e) {
-		// 	System.err.println("FILE WRITE ERROR");
-		// }
+	public static void editMyFile(File myFile) {
+		try {
+			FileWriter fstream = new FileWriter(myFile, true); //true appends, false overwrites
+			BufferedWriter out = new BufferedWriter(fstream);
+			out.write("Sample test");
+			out.flush();
+			out.close();
+		}
+		catch (IOException e) {
+			System.err.println("FILE WRITE ERROR");
+		}
 	}
 
 	//open a file
