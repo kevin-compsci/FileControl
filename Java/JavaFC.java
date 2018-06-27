@@ -25,14 +25,8 @@ class JavaFC {
 		//edit file
 		editMyFile(myFile);
 
-		//open file
-		openMyFile();
-
 		//read file
-		readMyFile();
-
-		//close file
-		closeMyFile();
+		readMyFile(myFile);
 	}
 
 	//function definitions below	
@@ -68,33 +62,16 @@ class JavaFC {
 		}
 	}
 
-	//open a file
-	public static void openMyFile() {
-		// try {
-		// 	System.out.println("OPEN");
-		// }
-		// catch (IOException e) {
-		// 	System.err.println("FILE OPEN ERROR");
-		// }
-	}
-
 	//read a file
-	public static void readMyFile() {
-		// try {
-		// 	System.out.println("READ");
-		// }
-		// catch (IOException e) {
-		// 	System.err.println("FILE READ ERROR");
-		// }
-	}
-
-	//close file
-	public static void closeMyFile() {
-		// try {
-		// 	System.out.println("CLOSE");
-		// }
-		// catch (IOException e) {
-		// 	System.err.println("FILE CLOSE ERROR");
-		// }
+	public static void readMyFile(File myFile) {
+		try {
+			Scanner scanner = new Scanner(myFile.toPath());
+			while(scanner.hasNext()) {
+				System.out.println(scanner.next());
+			}
+		}
+		catch (IOException e) {
+			System.err.println("FILE READ ERROR");
+		}
 	}
 }
