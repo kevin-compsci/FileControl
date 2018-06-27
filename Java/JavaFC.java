@@ -42,7 +42,7 @@ class JavaFC {
 			File myFile = new File("test.txt");
 
 			//if this file doesn't exist then create it
-			if(!file.exists()) {
+			if(!myFile.exists()) {
 				myFile.createNewFile();
 			}
 		}
@@ -53,41 +53,41 @@ class JavaFC {
 
 	//edit a file
 	public static void editMyFile() {
-		try {
-			System.out.println("WRITE")
-		}
-		catch (IOException e) {
-			System.err.println("FILE WRITE ERROR");
-		}
+		// try {
+		// 	System.out.println("WRITE");
+		// }
+		// catch (IOException e) {
+		// 	System.err.println("FILE WRITE ERROR");
+		// }
 	}
 
 	//open a file
 	public static void openMyFile() {
-		try {
-			System.out.println("OPEN")
-		}
-		catch (IOException e) {
-			System.err.println("FILE OPEN ERROR");
-		}
+		// try {
+		// 	System.out.println("OPEN");
+		// }
+		// catch (IOException e) {
+		// 	System.err.println("FILE OPEN ERROR");
+		// }
 	}
 
 	//read a file
 	public static void readMyFile() {
-		try {
-			System.out.println("READ")
-		}
-		catch (IOException e) {
-			System.err.println("FILE READ ERROR");
-		}
+		// try {
+		// 	System.out.println("READ");
+		// }
+		// catch (IOException e) {
+		// 	System.err.println("FILE READ ERROR");
+		// }
 	}
 
 	//close file
 	public static void closeMyFile() {
-		try {
-			System.out.println("CLOSE")
-		}
-		catch (IOException e) {
-			System.err.println("FILE CLOSE ERROR");
-		}
+		// try {
+		// 	System.out.println("CLOSE");
+		// }
+		// catch (IOException e) {
+		// 	System.err.println("FILE CLOSE ERROR");
+		// }
 	}
 }
