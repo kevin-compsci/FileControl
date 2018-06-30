@@ -1,6 +1,6 @@
 #
 #Kevin Nguyen
-#Basic Shell for Python.
+#Basic Python program for file operations. This program will create, edit, open, close, and read files.
 #
 #How to run (linux):
 #	1.) open command line and cd into directory folder of where this code is
@@ -11,9 +11,9 @@ import sys;
 import array;
 
 #function implementation/definition below
-def helloworld():
-	print "Hello World!";
+def start():
+	#TODO: implement basic file ops!
 
 
 #main driver below
-helloworld();
+start();
