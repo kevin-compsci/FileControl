@@ -1,5 +1,5 @@
 //Kevin Nguyen
-//Basic Shell for C++ (Cpp).
+//Basic C++ (Cpp) program for file operations. This program will create, edit, open, close, and read files.
 
 /*
 How to run (linux):
@@ -18,7 +18,7 @@ using namespace std;
 //main driver
 int main(int argc, char** argv) {
 	//local declarations
-	cout << "Hello World" << endl;
+	//TODO: implement basic file ops
 }
 
 //Functions implementations goes below
