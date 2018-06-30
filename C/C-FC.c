@@ -1,5 +1,6 @@
 //Kevin Nguyen
-//Basic Shell for C (C files).
+//Basic C (C files) program for file operations. This program will create, edit, open, close, and read files.
+
 
 /*
 How to run (linux):
@@ -16,7 +17,9 @@ How to run (linux):
 //main driver
 int main() {
 	//local declarations
-  	printf("Hello, World!\n");
+
+	//TODO: implement basic file ops!
+
   	return 0;
 }
 
