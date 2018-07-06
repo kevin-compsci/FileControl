@@ -14,7 +14,7 @@ import array;
 #createFile creates a file (.txt) and returns it
 def createFile():
 	#TODO: implement basic file ops!
-	f = open("sample.txt", "a+"); #create file w/ write and create if it doesn't exist
+	f = open("sample.txt", "a+"); #'w'/'a' = overwrite/append and '+'' = create file if needed
 	return f;
 
 #writeFile will edit the file contents
