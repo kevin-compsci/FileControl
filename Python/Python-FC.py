@@ -20,6 +20,7 @@ def createFile():
 #writeFile will edit the file contents
 def writeFile(f):
 	i = 0;
+
 	#loop 10 times and append or write to file
 	while i < 10:
 		f.write("i");
@@ -28,9 +29,11 @@ def writeFile(f):
 #readFile will read hte file contents
 def readFile():
 	f = open("sample.txt", "r"); #read into file
+	
 	#check to ensure f is in read mode
 	if f.mode == 'r':
 		contents = f.readlines(); #get contents per line
+
 		#for each line print their contents
 		for c in contents:
 			print(c); #print
