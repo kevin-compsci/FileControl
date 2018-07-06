@@ -20,6 +20,7 @@ def createFile():
 #writeFile will edit the file contents
 def writeFile(f):
 	i = 0;
+	#loop 10 times and append or write to file
 	while i < 10:
 		f.write("i");
 		i+=1;
