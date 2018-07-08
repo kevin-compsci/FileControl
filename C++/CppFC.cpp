@@ -11,14 +11,44 @@ How to run (linux):
 //include statements
 #include <cstdlib>
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 //function definitions
+void fileStartEdit();
+void fileOpenRead();
 
 //main driver
 int main(int argc, char** argv) {
 	//local declarations
 	//TODO: implement basic file ops
+
+	//create & edit
+	fileStartEdit();
+
+	//open & read
+	fileOpenRead();
+
+	//close
+
+	cout << "Complete!" << endl;
+	return 0;
 }
 
-//Functions implementations goes below
+//fileStartEdit will create a file or write to in
+void fileStartEdit() {
+	//create
+	ofstream myFile;
+	myFile.open("sample.txt", ios::app);
+	
+	//check if file was opened properly
+	if(myFile.is_open()) {
+		myFile << "Hi there!" << endl; //write
+		myFile.close();
+	}
+}
+
+//fileOpenRead will open a file and read in the contents
+void fileOpenRead() {
+
+}
