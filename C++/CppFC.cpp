@@ -12,7 +12,7 @@ How to run (linux):
 #include <cstdlib>
 #include <iostream>
 #include <fstream>
-#include "string"
+#include <string>
 using namespace std;
 
 //function definitions
@@ -22,15 +22,13 @@ void fileOpenRead();
 //main driver
 int main(int argc, char** argv) {
 	//local declarations
-	//TODO: implement basic file ops
+	//TODO: Change implementation to use dynammic 2D array (item[0] = charArray['...']) rather than strings
 
 	//create & edit
 	fileStartEdit();
 
 	//open & read
 	fileOpenRead();
-
-	//close
 
 	cout << "Complete!" << endl;
 	return 0;
