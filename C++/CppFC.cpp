@@ -12,6 +12,7 @@ How to run (linux):
 #include <cstdlib>
 #include <iostream>
 #include <fstream>
+#include "string"
 using namespace std;
 
 //function definitions
@@ -50,5 +51,12 @@ void fileStartEdit() {
 
 //fileOpenRead will open a file and read in the contents
 void fileOpenRead() {
-
+	ifstream myFile("sample.txt");
+	string word; 
+	if(myFile.is_open()) {
+		while(myFile >> word) {
+			cout << word << endl;
+		}
+		myFile.close();
+	}
 }
