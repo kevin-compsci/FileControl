@@ -23,6 +23,8 @@ void fileOpenRead();
 int main(int argc, char** argv) {
 	//local declarations
 	//TODO: Change implementation to use dynammic 2D array (item[0] = charArray['...']) rather than strings
+	//TODO: Use parallel list to keep track of sizes for each word at nth index
+	//TODO: http://www.cplusplus.com/reference/istream/istream/get/
 
 	//create & edit
 	fileStartEdit();
