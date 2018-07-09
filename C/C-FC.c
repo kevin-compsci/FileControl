@@ -34,10 +34,10 @@ void fileCreateWrite() {
 	//check if file open successfully
 	if(myFile != NULL) {
 		fprintf(myFile, "Hello there!\n");
+	
+		//close file
+		fclose(myFile);
 	}
-
-	//close file
-	fclose(myFile);
 }
 
 //fileOpenRead will open a file and read in the contents
