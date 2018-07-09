@@ -1,7 +1,6 @@
 //Kevin Nguyen
 //Basic C (C files) program for file operations. This program will create, edit, open, close, and read files.
 
-
 /*
 How to run (linux):
 	1.) open command line and cd into directory folder of where this code is
@@ -13,6 +12,8 @@ How to run (linux):
 #include <stdio.h>
 
 //function definitions
+void fileCreateWrite();
+void fileOpenRead();
 
 //main driver
 int main() {
@@ -23,4 +24,12 @@ int main() {
   	return 0;
 }
 
-//Functions implementations goes below
+//fileCreateWrite will create a file and write to it if needed
+void fileCreateWrite() {
+
+}
+
+//fileOpenRead will open a file and read in the contents
+void fileOpenRead() {
+	
+}
