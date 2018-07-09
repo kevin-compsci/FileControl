@@ -33,6 +33,7 @@ void fileCreateWrite() {
 	
 	//check if file open successfully
 	if(myFile != NULL) {
+		//write to file
 		fprintf(myFile, "Hello there!\n");
 	
 		//close file
@@ -42,7 +43,10 @@ void fileCreateWrite() {
 
 //fileOpenRead will open a file and read in the contents
 void fileOpenRead() {
+	//local declarations
 	int c;
+
+	//open file
 	FILE *myFile = fopen("Sample.txt", "r");
 
 	//check if file was opened
@@ -51,6 +55,8 @@ void fileOpenRead() {
 		while((c = getc(myFile)) != EOF) {
 			putchar(c); //to stdout
 		}
+
+		//close file
 		fclose(myFile);
 	}
 }
