@@ -47,8 +47,9 @@ void fileOpenRead() {
 
 	//check if file was opened
 	if(myFile != NULL) {
+		//loop through every character in stream until EOF
 		while((c = getc(myFile)) != EOF) {
-			putchar(c);
+			putchar(c); //to stdout
 		}
 		fclose(myFile);
 	}
