@@ -17,19 +17,28 @@ void fileOpenRead();
 
 //main driver
 int main() {
-	//local declarations
+	//create and write
+	fileCreateWrite();
 
-	//TODO: implement basic file ops!
 
   	return 0;
 }
 
 //fileCreateWrite will create a file and write to it if needed
 void fileCreateWrite() {
+	//create file w/ "a" = append / "w" = write
+	FILE *myFile = fopen("Sample.txt", "a");
+	
+	//check if file open successfully
+	if(myFile != NULL) {
+		fprintf(myFile, "Hello there!\n");
+	}
 
+	//close file
+	fclose(myFile);
 }
 
 //fileOpenRead will open a file and read in the contents
 void fileOpenRead() {
-	
+
 }
