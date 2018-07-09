@@ -20,6 +20,8 @@ int main() {
 	//create and write
 	fileCreateWrite();
 
+	//open and read
+	fileOpenRead();
 
   	return 0;
 }
@@ -40,5 +42,14 @@ void fileCreateWrite() {
 
 //fileOpenRead will open a file and read in the contents
 void fileOpenRead() {
+	int c;
+	FILE *myFile = fopen("Sample.txt", "r");
 
+	//check if file was opened
+	if(myFile != NULL) {
+		while((c = getc(myFile)) != EOF) {
+			putchar(c);
+		}
+		fclose(myFile);
+	}
 }
