@@ -1,4 +1,3 @@
-#
 #Kevin Nguyen
 #Basic Python program for file operations. This program will create, edit, open, close, and read files.
 #
